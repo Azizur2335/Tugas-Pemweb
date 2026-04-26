@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Portofolio Jijur</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -144,18 +144,18 @@
         </section>
         <section class="container contact" id="Contact">
             <h2>Contact</h2>
-            <form class="form">
+            <form class="form" action="backendForm.php" method="POST">
                 <label>Nama:</label>
-                <input type="text" required>
-                <label>Email</label>
-                <input type="email" required>
-                <label>Password</label>
-                <input type="password" required>
-                <label>Tanggal Lahir</label>
-                <input type="date" required>
-                <label>Pesan</label>
-                <input type="text-area" required>
-                <button type="submit">Submit</button>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan Nama" required>
+                <label>Email:</label>
+                <input type="email" name='email' placeholder="Masukkan Email" required>
+                <label>Password:</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan Password" required>
+                <label>Nomor Telepon:</label>
+                <input type="tel" name='telepon' required>
+                <label>Pesan:</label>
+                <textarea name="pesan" placeholder="Masukkan Pesan" required></textarea>
+                <button class="submitBtn" type="submit">Submit</button>
             </form>
         </section>
     </main>
@@ -165,5 +165,6 @@
             © <span id="year"></span> Azizurrifki. All rights reserved.
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
